@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startup Pitch Simulator – Web Summit Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Startup Pitch Simulator</h1>
+    <p class="subtitle">Create your own startup for the Web Summit!</p>
+
+    <div id="game">
+      <div class="step" id="step1">
+        <h2>1️⃣ Choose your Startup Name</h2>
+        <button class="option" onclick="selectOption('name', 'AI4Cats')">AI4Cats</button>
+        <button class="option" onclick="selectOption('name', 'CryptoGarden')">CryptoGarden</button>
+        <button class="option" onclick="selectOption('name', 'Greenify')">Greenify</button>
+        <button class="option" onclick="selectOption('name', 'QuantumSnacks')">QuantumSnacks</button>
+      </div>
+
+      <div class="step hidden" id="step2">
+        <h2>2️⃣ Choose your Sector</h2>
+        <button class="option" onclick="selectOption('sector', 'Artificial Intelligence')">AI</button>
+        <button class="option" onclick="selectOption('sector', 'Blockchain')">Blockchain</button>
+        <button class="option" onclick="selectOption('sector', 'Green Tech')">Green Tech</button>
+        <button class="option" onclick="selectOption('sector', 'Quantum Computing')">Quantum Computing</button>
+      </div>
+
+      <div class="step hidden" id="step3">
+        <h2>3️⃣ Choose your Slogan</h2>
+        <button class="option" onclick="selectOption('slogan', 'Revolutionizing the future, one click at a time!')">Revolutionizing the future...</button>
+        <button class="option" onclick="selectOption('slogan', 'Empowering the world through innovation.')">Empowering the world...</button>
+        <button class="option" onclick="selectOption('slogan', 'Disrupting industries for good.')">Disrupting industries...</button>
+        <button class="option" onclick="selectOption('slogan', 'Think big, code smart, change everything.')">Think big...</button>
+      </div>
+
+      <div class="step hidden" id="result">
+        <h2>🎉 Your Startup is Born!</h2>
+        <div class="card" id="pitchCard"></div>
+        <button id="restartBtn" onclick="restartGame()">Start Again</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made for <strong>Web Summit 2025</strong> 🌍 | by a creative coder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
